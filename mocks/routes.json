@@ -1,0 +1,12 @@
+{
+  "/clientes": "/clientes",
+  "/cidades": "/cidades",
+  "/clientes/:id": "/clientes/:id",
+  "/grupos": "/grupos",
+  "/grupos/:id": "/grupos/:id",
+  "/produtos": "/produtos",
+  "/precos": "/precos",
+  "/estoques": "/estoques",
+  "/produtos/:id": "/produtos/:id",
+  "/produtos?grupoId=:grupoId": "/produtos?grupoId=:grupoId"
+}

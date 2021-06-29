@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- Home page -->
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img height="24" src="../../../../assets/imagens/logo-nav.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menus de acesso as telas -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownCadastros" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Cadastros
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownCadastros">
+            <!-- Declarar os menus para acesso as telas de castros aqui abaixo -->
+            <li><a class="dropdown-item" [routerLink]="['/clientes']">Clientes</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/grupos']">Grupos</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/produtos']">Produtos</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>

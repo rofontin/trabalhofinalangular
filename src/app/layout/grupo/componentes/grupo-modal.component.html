@@ -1,0 +1,30 @@
+<div class="modal-header">
+  <h5 class="modal-title">{{grupo?.id ? 'Editando': 'Inserindo'}} grupo</h5>
+</div>
+<div class="modal-body m-3">
+
+  <form [formGroup]="formGroup" *ngIf="formGroup">
+
+    <div class="row">
+      <!-- Campo de Nome -->
+      <mat-form-field class=" col-md-12 mt-1">
+        <mat-label>Descrição</mat-label>
+        <input type="text" matInput formControlName="descricao">
+        <app-message-valid-control [control]="getControl('descricao')"> </app-message-valid-control>
+      </mat-form-field>
+    </div>
+  </form>
+
+</div>
+<div class="modal-footer">
+  <!-- Botão para salvar o usuário -->
+  <button class="btn btn-success" (click)="salvar()">
+    <i class="fa fa-save mr-2"></i>
+    Salvar
+  </button>
+  <!-- Botão para excluír o usuário (só mostra se já tiver ID, senão não precisa excluir poir nem inseriu) -->
+  <button class="btn btn-danger" (click)="excluir()" *ngIf="grupo?.id">
+    <i class="fa fa-delete mr-2"></i>
+    Excluir
+  </button>
+</div>

@@ -1,0 +1,41 @@
+{
+  "clientes": [
+    {
+      "nome": "ffffffffffffffff",
+      "cpf": "095.781.219-11",
+      "dataNascimento": "2021-06-11",
+      "endereco": {
+        "logradouro": "fffffffffff",
+        "numero": "1410",
+        "bairro": "cep",
+        "cep": "85440-000",
+        "cidade": {
+          "id": 3,
+          "nome": "Cascavel",
+          "uf": "PR"
+        }
+      },
+      "dateInsert": "2021-06-26T18:15:28.963Z",
+      "id": 1
+    }
+  ],
+  "produtos": [],
+  "grupos": [],
+  "cidades": [
+    {
+      "id": 1,
+      "nome": "Toledo",
+      "uf": "PR"
+    },
+    {
+      "id": 2,
+      "nome": "Marechal",
+      "uf": "PR"
+    },
+    {
+      "id": 3,
+      "nome": "Cascavel",
+      "uf": "PR"
+    }
+  ]
+}
