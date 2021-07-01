@@ -1,0 +1,11 @@
+<app-card [titulo]="titulo" [loading]="produtosPorGrupo.loading" (onRefresh)="atualizarDados()">
+
+  <canvas baseChart *ngIf="!produtosPorGrupo.loading"
+          [datasets]="produtosPorGrupo.datasets"
+          [labels]="produtosPorGrupo.labels"
+          [options]="{ responsive: true }"
+          [legend]="false"
+          [chartType]="typeChart">
+  </canvas>
+
+</app-card>

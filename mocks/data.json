@@ -1,26 +1,60 @@
 {
-  "clientes": [
+  "clientes": [],
+  "produtos": [
     {
-      "nome": "ffffffffffffffff",
-      "cpf": "095.781.219-11",
-      "dataNascimento": "2021-06-11",
-      "endereco": {
-        "logradouro": "fffffffffff",
-        "numero": "1410",
-        "bairro": "cep",
-        "cep": "85440-000",
-        "cidade": {
-          "id": 3,
-          "nome": "Cascavel",
-          "uf": "PR"
-        }
+      "descricao": "Soja a granel",
+      "ativo": false,
+      "estoque": 3,
+      "preco": {
+        "custo": 7,
+        "venda": 13
       },
-      "dateInsert": "2021-06-26T18:15:28.963Z",
+      "grupoId": [
+        1
+      ],
       "id": 1
+    },
+    {
+      "descricao": "Sabão",
+      "ativo": true,
+      "estoque": 5,
+      "preco": {
+        "custo": 6.33,
+        "venda": 9
+      },
+      "grupoId": [
+        3
+      ],
+      "id": 2
+    },
+    {
+      "descricao": "Milho",
+      "ativo": true,
+      "estoque": 6,
+      "preco": {
+        "custo": 1.3,
+        "venda": 2.22
+      },
+      "grupoId": [
+        1
+      ],
+      "id": 3
     }
   ],
-  "produtos": [],
-  "grupos": [],
+  "grupos": [
+    {
+      "descricao": "Sementes",
+      "id": 1
+    },
+    {
+      "descricao": "Fertilizantes",
+      "id": 2
+    },
+    {
+      "descricao": "Domésticos",
+      "id": 3
+    }
+  ],
   "cidades": [
     {
       "id": 1,

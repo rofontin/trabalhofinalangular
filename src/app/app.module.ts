@@ -28,7 +28,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatSelectModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'pt' },
+    { provide: LOCALE_ID, useValue: 'en' },
     { provide: HTTP_INTERCEPTORS, useClass: HttpConfigInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]

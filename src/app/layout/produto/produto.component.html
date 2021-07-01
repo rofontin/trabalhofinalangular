@@ -41,12 +41,12 @@
 
       <ng-container matColumnDef="custo">
         <th mat-header-cell *matHeaderCellDef>Custo</th>
-        <td mat-cell *matCellDef="let element">{{element.preco.custo}}</td>
+        <td mat-cell *matCellDef="let element">{{element.preco.custo | currency:'BRL':true:'1.2-2'}}</td>
       </ng-container>
 
       <ng-container matColumnDef="venda">
         <th mat-header-cell *matHeaderCellDef>Venda</th>
-        <td mat-cell *matCellDef="let element">{{element.preco.venda}}</td>
+        <td mat-cell *matCellDef="let element">{{element.preco.venda | currency:'BRL':true:'1.2-2'}}</td>
       </ng-container>
 
       <ng-container matColumnDef="action">
