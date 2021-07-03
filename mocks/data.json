@@ -9,9 +9,7 @@
         "custo": 7,
         "venda": 13
       },
-      "grupoId": [
-        1
-      ],
+      "grupoId": 1,
       "id": 1
     },
     {

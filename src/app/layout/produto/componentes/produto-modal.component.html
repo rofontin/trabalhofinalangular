@@ -29,13 +29,11 @@
 
       <!-- Grupo ID -->
       <div class="col-md-6 mt-1 form-group">
-        <label class="form-control-label">Grupo ID</label>
+        <label class="form-control-label">Grupo</label>
         <ng-select formControlName="grupoId"
                    [items]="grupos"
-                   [multiple]="true"
                    bindValue="id"
-                   bindLabel="descricao"
-                   [searchable]="true">
+                   bindLabel="descricao">
           <ng-template ng-option-tmp let-item="item">
             {{item.descricao}}
           </ng-template>
